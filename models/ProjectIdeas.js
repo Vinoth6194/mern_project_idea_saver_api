@@ -5,6 +5,6 @@ const ProjectIdeaSchema = mongoose.Schema({
   status: { type: String, required: true },
 });
 
-const ProjectIdeaModel = mongoose.model("projectIdeas", ProjectIdeaSchema);
+const ProjectIdeaModel = mongoose.model("project_ideas", ProjectIdeaSchema);
 
 module.exports = ProjectIdeaModel;
