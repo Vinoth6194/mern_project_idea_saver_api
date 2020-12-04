@@ -33,8 +33,6 @@ router.post("/", (req, res) => {
   });
 });
 
-module.exports = router;
-
 router.put("/:id", (req, res) => {
   if (!ObjectID.isValid(req.params.id)) {
     return res.status(400).send("No record with given id : " + req.params.id);
@@ -58,3 +56,5 @@ router.put("/:id", (req, res) => {
     }
   );
 });
+
+module.exports = router;
